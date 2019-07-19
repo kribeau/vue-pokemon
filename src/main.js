@@ -1,8 +1,20 @@
 import Vue from 'vue'
-import App from './App.vue'
+import store from './store'
+import { install as Filters } from './support/filters'
+import { install as Ga } from './support/ga'
+import { install as Buefy } from './buefy'
+// import './registerServiceWorker'
+import './assets/scss/app.scss'
+
+Vue.use(Ga)
+Vue.use(Buefy)
+Vue.use(Filters)
 
 Vue.config.productionTip = false
 
+const App = () => import('./AppShell.vue')
+
 new Vue({
-  render: h => h(App),
+  store,
+  render: h => h(App)
 }).$mount('#app')

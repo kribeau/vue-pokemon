@@ -1,5 +1,17 @@
 # vue-pokemon
 
+>pc端截图：![avatar](public/img/截图1.png)
+![avatar](public/img/截图2.png)
+![avatar](public/img/截图3.png)
+
+
+
+
+>手机端截图: ![avatar](public/img/截图4.png)
+![avatar](public/img/截图5.png)
+![avatar](public/img/截图6.png)
+
+
 ## Project setup
 ```
 yarn install
